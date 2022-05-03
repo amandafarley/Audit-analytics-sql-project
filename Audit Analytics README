@@ -1,0 +1,34 @@
+# sql-project: Audit Analytics 
+Project Objective: To run data analytics on client's large sets of data. Specifically to test the accuracy and completeness of the data and verify relationships among financial statement accounts. 
+
+What problem are you solving? Running analytics on large sets of data that excel cannot handle and using analytics to find audit evidence/relationships rather than manually doing it. 
+I am solving this problem by using SQL in a Python notebook rather than excel to run analytics. Also, using SQL queries to run analytics and find relationships among the data you normally wouldn't be able to find. 
+
+Job Description: 
+The job I have selected is an Audit & Assurance Specialist Assistance at Deloitte. Deloitte is one of the largest accounting firms in the world. In recent years they have been focusing on using technology and analytics to improve their accounting services. At my future job as an auditor, I want to try to make the audit more effective and efficient by running analytics on the client’s data to then draw insights and conclusions from it. The kind of tasks that the job requires are: building and executing data analytics to support audit objectives and querying large data sets to analyze patterns and reveal relationships from client data. 
+This project is related to this job posting because I executed data analytics on trial balance and zillow data to support the audit assertions of accuracy and completeness by verifying if the data is complete and running analytics for valuation. I am also finding relationships among the trial balance data with various accounts to see if they seem reasonable.
+
+Data: 
+I sourced my zillow data from a zillow API. Specifically I used the zillow.com API from Rapidapi.com. 
+I sourced my trial balance listing data by downloading the pdf file from the website of city of Ann Arbor Michigan. I then used Python to convert the pdf to csv and used excel to clean the data.  
+My zillow data has one table with the fields of: zpid, address, price, sqft, lot_area_value, and days_on_zillow. It has 1095 records.
+My trial balance data has two tables: trial_balance and account_names and they are linked by account_number. 
+Trial_balance table has these fields: entry_number, account_number, balance_forward, ytd_debits, ytd_credits, ending_balance, PY_ytd_balance. It has 13,763 records. 
+Account_names table has these fields: id, account_number, account_name. It has 1168 records. 
+
+Notebooks:
+Sql Analysis: https://github.com/amandafarley/sql-project/blob/7ceee4a2791b0f898bb36b5e6b7c2ec695728963/sql_analysis.ipynb
+This notebook is my business analysis of my project. It has my exploratory queries as well as the queries and answers to my business questions.
+
+Zillow Data Collection: https://github.com/amandafarley/sql-project/blob/7ceee4a2791b0f898bb36b5e6b7c2ec695728963/data_collection.ipynb
+The code for collecting my data from the Zillow API. 
+
+Trial Balance Data conversion: https://github.com/amandafarley/sql-project/blob/7ceee4a2791b0f898bb36b5e6b7c2ec695728963/TB_Pdf_converting.ipynb 
+The code for converting the trial balance from PDF to CSV with Python 
+
+Presentation: https://github.com/amandafarley/sql-project/blob/7ceee4a2791b0f898bb36b5e6b7c2ec695728963/presentation.ipynb
+Merge of the 3 other notebooks and the notebook used to make my presentation slides. 
+
+
+Future Improvements:
+One improvement I would make if I had more time was to keep the activity account within the trial balance data. I had to delete them when cleaning to make the cleaning more efficient and easier but then it limited analytics I could run because I did not have revenue, expenses totals or department totals. 
